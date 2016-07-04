@@ -1,2 +1,6 @@
 # bitMapFontCreator
-JmonkeyEngine 3.0 + ابزاری برای ساخت فونت فارسی برای استفاده در موتور بازی سازی
+<p dir="rtl">
+ bitMapFontCreator یک ابزار رایگان برای تبدیل و نمایش فونت های فارسی و برای استفاده در موتور بازی سازی JmonkeyEngine است. <br/>
+اطلاعات بیشتر در آدرس زیر <br/>
+<a href="http://younes-noori.blog.ir/page/bitMapFontCreator">younes-noori.blog.ir</a>
+</p>
