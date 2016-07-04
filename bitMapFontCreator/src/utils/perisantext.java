@@ -496,10 +496,10 @@ public class perisantext {
                 case '}':
                     b.append(p.g.get(57)[0]);
                     break;
-                case '<': // <<
+                case '«': // <<
                     b.append(p.g.get(58)[0]);
                     break;
-                case '>': // >>
+                case '»': // >>
                     b.append(p.g.get(59)[0]);
                     break;
                 case '\'':
@@ -522,9 +522,11 @@ public class perisantext {
                 case 'ـ':
                     b.append(p.g.get(67)[0]);
                     break;
-                case '#':
-                    b.append(p.g.get(68)[0]);
+                case '.':
+                    b.append(p.g.get(70)[0]);
                     break;
+                default:
+                    b.append(p.g.get(68)[0]);
 
             }
 
@@ -535,7 +537,7 @@ public class perisantext {
 
     private static int wich_one(char c_b, char c_n) {
         int code = 0; // 'ب' 'ـب' 'بـ' 'ـبـ'
-        String pattern_b_not_chasban = "[رآادذزوژء\\s\\d\\%\\!\\(\\)\\+\\-\\*\\/\\:\\=\\[\\]\\{\\}\\<\\>\\'\\\"\\,\\;؟\\-\\#ء]";
+        String pattern_b_not_chasban = "[رآادذزوژء\\s\\d\\%\\!\\(\\)\\+\\-\\*\\/\\:\\=\\[\\]\\{\\}\\<\\>\\'\\\"\\,\\;؟\\-\\#ء\\.]";
         String pattern_n_not_chasban = "\\s";
         String strB = new String(new char[]{c_b}); // before charachter c-1
         String strN = new String(new char[]{c_n}); //next chararcter  c+1
@@ -645,6 +647,7 @@ class persianGlypgh {
         g.put(67, new char[]{(char) 140}); // -
         g.put(68, new char[]{(char) 312}); // #
         g.put(69, new char[]{(char) 94}); // space
+        g.put(70, new char[]{(char) 105}); // dot
 
     }
 
