@@ -23,7 +23,7 @@ public class RootClass {
     static int imageSize = 2560;
     static int paddingX = 20;
     static int paddingY = 50;
-    static int letterSpacing = 0;
+    static int letterSpacing = 1;
     static String fileName = "image";
     static int style = Font.PLAIN;
 
@@ -41,7 +41,7 @@ public class RootClass {
         style = sc.nextInt();
 
         try {
-            AngelFont ang = FontCreator.buildFont(fontName, fileName, imageSize, fontSize, style, paddingX, paddingY, letterSpacing, false);
+            AngelFont ang = FontCreator.buildFont(fontName, fileName, imageSize, fontSize, style, paddingX, paddingY, letterSpacing, true);
 
             System.out.println(">>>   trying to write Image file ...");
             File f = new File(BaseDir(new RootClass()) + fileName + ".png");

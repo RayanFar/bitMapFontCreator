@@ -69,7 +69,8 @@ public abstract class FontCreator {
             g.drawRect(0, 0, bitmapSize - 1, bitmapSize - 1);
         }
         int xPos = 0;
-        int height = fm.getDescent() + fm.getAscent();
+        int height = fm.getAscent();
+
         int yPos = height + (paddingY * 2);
 
         for (int i = 1; i < 220; i++) {
@@ -101,7 +102,7 @@ public abstract class FontCreator {
             g.drawGlyphVector(gl, xPos + paddingX - xOffset, yPos + paddingY);
 
             if (debug) {
-                g.setColor(Color.BLUE);
+                g.setColor(Color.RED);
                 g.drawRect(xPos, yPos - fm.getAscent(), width + (paddingX * 2), height + (paddingY * 2));
                 g.setColor(Color.WHITE);
             }
@@ -119,7 +120,7 @@ public abstract class FontCreator {
                     + "    width=" + (width + (paddingX * 2))
                     + "    height=" + (fm.getHeight() + (paddingY * 2))
                     + "    xoffset=" + (xOffset)
-                    + "    yoffset=0"
+                    + "    yoffset="
                     + "    xadvance=" + XspaceStr + " "
                     + "    page=0"
                     + "    chnl=0\n";

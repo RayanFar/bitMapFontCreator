@@ -17,7 +17,7 @@ public class perisantext {
 
         for (int i = 0; i < ch.length; i++) {
 
-            System.out.println("char at (" + i + ") is => " + new String(new char[]{ch[i]}));
+//            System.out.println("char at (" + i + ") is => " + new String(new char[]{ch[i]}));
             switch (ch[i]) {
 
                 case ' ':

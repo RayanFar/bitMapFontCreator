@@ -1,0 +1,2 @@
+utils.perisantext
+utils.persianGlypgh
