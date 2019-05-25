@@ -14,7 +14,9 @@
  <pre>
    String txt = perisantext.p("سلام دنیا");
    BitmapFont font_m = assetManager.loadFont("Interface/Fonts/medium.fnt");
-   
+ 
+ 
+ 
    /*in jme bitmap text*/
    BitmapText bmt = new BitmapText(font_m);
    bmt.setText(txt);
